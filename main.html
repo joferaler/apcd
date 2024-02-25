@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Our one and only css style sheet :) -->
+  <link href="mystyle.css" rel="stylesheet" type="text/css" />
+  <title>APCD Minder Portal</title>
+</head>
+
+<body>
+
+  <!-- HTML Header -->
+  <div class="header">
+    <img src="images/logo.png" alt="APCD" class="logo">
+    <h1>SUB TESTING</h1>
+    <label id="tech" name="tech">Technician: Tech Name</label>
+    <div class="head-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Customer</th>
+            <th>Warehouse</th>
+            <th>Order No.</th>
+            <th>Ownership</th>
+            <th>Location</th>
+            <th>GRN No.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="customer" name="customer">John Doe</td>
+            <td id="warehouse" name="warehouse">GV</td>
+            <td id="order" name="order">12345</td>
+            <td id="ownership" name="ownership">APCD</td>
+            <td id="location" name="location">RPL12345</td>
+            <td id="grnno" name="grnno">123456</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- End HTML Header -->
+  <div class="empties"></div>
+  <!-- End HTML Header -->
+
+  <div>
+    <button class="button button-active">Main</button>
+    <a href="details.html"><button class="button button-default">Details</button></a>
+    <a href="erasure.html"><button class="button button-default">Erasure</button></a>
+  </div>
+
+  <div class="indent"></div>
+  <!-- Start "Main Table" -->
+  <!-- Start "Left Table" -->
+  <table class="table-left">
+
+    <tr>
+      <td class="table-label">
+        <label>SSN</label>
+      </td>
+      <td>
+        <textarea class="textarea-size" id="serial" name="serial" rows="3" cols="30"
+          placeholder="Enter SSN number here">12345678</textarea>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <label>Device Type</label>
+      </td>
+      <td>
+        <select class="form-size" id="type" name="type">
+          <option value="option1">Desktop PC</option>
+          <option value="option2">Mobile Phone</option>
+          <option value="option3">Cisco Server</option>
+          <!-- Add more options as needed -->
+        </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <label>Brand</label>
+      </td>
+      <td>
+        <select class="form-size" id="brand" name="brand">
+          <option value="option1">DELL</option>
+          <option value="option2">Acer</option>
+          <option value="option3">Asus</option>
+          <!-- Add more options as needed -->
+        </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <label>Model/ Qty</label>
+      </td>
+      <td>
+        <textarea class="textarea-size" id="model" name="model"
+          placeholder="Enter model or Quantity">Optiplex 7440</textarea>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <label>Generic</label>
+      </td>
+      <td>
+        <select class="form-size" id="generic" name="generic">
+          <option value="option1">All In One</option>
+          <option value="option2">Acer Nitro 5</option>
+          <option value="option3">HP Omen</option>
+          <!-- Add more options as needed -->
+        </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <label>Description</label>
+      </td>
+      <td>
+        <textarea class="textarea-size" id="description" name="description" rows="1"
+          placeholder="Device description"></textarea>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <label>Serial Number</label>
+      </td>
+      <td>
+        <textarea class="textarea-size" id="serial" name="serial" rows="3" cols="30"
+          placeholder="Device serial number">A1B2C3D4</textarea>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <label>Legacy ID</label>
+      </td>
+      <td>
+        <textarea class="textarea-size" id="legacy" name="legacy" rows="3" cols="30"
+          placeholder="Legacy ID">A1B2C3D4</textarea>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <label>Mac Address</label>
+      </td>
+      <td>
+        <textarea class="textarea-size" id="mac" name="mac" rows="3" cols="30"
+          placeholder="device mac address"></textarea>
+      </td>
+    </tr>
+
+  </table>
+  <!-- End "Left Table" -->
+
+  <!-- Start "Right Table" -->
+  <table class="table-right">
+
+    <tr>
+      <td class="table-label">
+        <label>Operating System</label>
+      </td>
+      <td>
+        <select class="form-size" id="os" name="os">
+          <option value="option1">Windows 11 Pro</option>
+          <option value="option2">Windows 8 Home</option>
+          <!-- Add more options as needed -->
+        </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <label>CPU Type</label>
+      </td>
+      <td>
+        <select class="form-size" id="cpu" name="cpu">
+          <option value="option1">Intel i7 12800H</option>
+          <option value="option2">AMD 6800</option>
+          <!-- Add more options as needed -->
+        </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <label>CPU Speed in MHz</label>
+      </td>
+      <td>
+        <select class="form-size" id="speed" name="speed">
+          <option value="option1">4800</option>
+          <option value="option2">5800</option>
+          <!-- Add more options as needed -->
+        </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <label>RAM</label>
+      </td>
+      <td>
+        <select class="form-size" id="ram" name="ram">
+          <option value="option1">32 GB</option>
+          <option value="option2">64 GB</option>
+          <!-- Add more options as needed -->
+        </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <label>HDD Capacity</label>
+      </td>
+      <td>
+        <select class="form-size" id="hddcapacity" name="hddcapacity">
+          <option value="option1">1 TB NVme SSD</option>
+          <option value="option2">512 GB SSD</option>
+          <!-- Add more options as needed -->
+        </select>
+      </td>
+    </tr>
+
+    <tr>
+
+      <td>
+        <label>Media Type</label>
+      </td>
+      <td>
+        <select class="form-size" id="mediatype" name="mediatype">
+          <option value="option1">DVD-RW/ CD-RW</option>
+          <option value="option2">NONE</option>
+          <!-- Add more options as needed -->
+        </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <label>New or Used</label>
+      </td>
+      <td>
+        <select class="form-size" id="newused" name="newused">
+          <option value="option1">New</option>
+          <option value="option2">Used</option>
+          <!-- Add more options as needed -->
+        </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <label>Screen Size</label>
+      </td>
+      <td>
+        <select class="form-size" id="screen" name="screen">
+          <option value="option1">N/A</option>
+          <option value="option2">15 WS Touch</option>
+          <!-- Add more options as needed -->
+        </select>
+      </td>
+    </tr>
+  </table>
+  <!-- End "Main Table" -->
+
+  <br style="clear:both" />
+  <div class="empties"></div>
+
+  <div style="margin-bottom: 5px;">Additional Notes</div>
+
+  <div>
+    <textarea class="note-area" id="notes" name="notes" rows="6" placeholder="Additional notes">INTORD 0001</textarea>
+  </div>
+
+  <div class="empties"></div>
+  <div class="centered-bar">
+    <span>FAULT LIST</span>
+  </div>
+  <div class="empties"></div>
+
+  <div class="button-container">
+    <table>
+      <tr>
+        <td style="border: none;">
+          <button class="button button-default">Remove</button>
+          <button class="button button-default">History</button>
+        </td>
+        <td style="border: none;"><button class="button button-default" style="float: right;">Update SSN</button></td>
+      </tr>
+    </table>
+
+  </div>
+  <div>
+
+  </div>
+
+  <table>
+    <tr>
+      <td>
+
+        <ul style="list-style-type: none; margin-left: 10px;">
+          <li><input type="checkbox" id="item1" name="item1" value="Item 1">
+            <label for="item1">Faulty HDD</label>
+          </li>
+          <li><input type="checkbox" id="item2" name="item2" value="Item 2">
+            <label for="item2">Scratched case major</label>
+          </li>
+          <li><input type="checkbox" id="item3" name="item3" value="Item 3">
+            <label for="item3">Dent minor</label>
+          </li>
+        </ul>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <select class="form-size" id="addfault" name="addfault">
+          <option value="option1"></option>
+          <option value="option2">Scratch Case Major</option>
+          <!-- Add more options as needed -->
+        </select>
+        <button class="button button-default">Add</button>
+
+      </td>
+
+    </tr>
+
+  </table>
+
+  <div class="empties"></div>
+
+</body>
+
+</html>
